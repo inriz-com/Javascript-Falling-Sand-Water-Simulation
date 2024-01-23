@@ -472,4 +472,4 @@ function resize() {
 
 }
 
-window.addEventListener('resize', resize);Í
+window.addEventListener('resize', resize);
