@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Sand and Water Simulator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            -webkit-user-select: none;
+            user-select: none;
+            touch-action: none;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            -webkit-user-select: none;
+            user-select: none;
+            touch-action: none;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            background: rgba(255, 255, 255, 0.317);
+            color: #fff;
+            user-select: none;
+            -webkit-user-select: none;
+            cursor: pointer;
+            margin: 0 5px 5px 0;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .btn.selected {
+            border: 2px solid #fff;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.417);
+        }
+
+        .btn.secondary {
+            background: rgba(255, 255, 255, 0.117);
+            color: #fff;
+        }
+
+        .btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.217);
+        }
+
+        .tools {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="tools">
+        <div class="btn" id="set_sand">Sand</div>
+        <div class="btn" id="set_water">Water</div>
+        <div class="btn" id="set_wall">Wall</div>
+        <div class="btn" id="set_eraser">Eraser</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
